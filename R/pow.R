@@ -22,4 +22,8 @@
 #' pow(1:10)
 #' pow(-5)
 #' @export
-pow <- function(x, a = 2) x^a
+pow <- function(x, a = 2)
+res <- x^a
+p <- ggplot2::qplot(x, res)
+print(p)
+return(res)
